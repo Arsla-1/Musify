@@ -1,0 +1,417 @@
+/*
+---01 TYPOGRAPHY---
+Font-size:16px
+10//12//14//18//20//24//30//36//42//52//62//74//90//106
+
+
+---02 Whitespace---
+8//16//24//32//40//48//56//64//72//80
+
+
+---03 COLOR---
+maincolor:#9775fa
+Greycolor:#e5dbff
+#38b6ff
+
+
+
+
+
+*/
+
+/**************************/
+/*GENERAL*/
+/**************************/
+
+/*
+---01 TYPOGRAPHY---
+Font-size:16px
+10//12//14//18//20//24//30//36//42//52//62//74//90//106
+
+
+---02 Whitespace---
+8//16//24//32//40//48//56//64//72//80
+
+
+---03 COLOR---
+maincolor:#ff922b
+Greycolor:#ffe8cc
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #495057;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100rem;
+  padding: 3.2rem 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 7.2rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center {
+  align-items: center;
+  justify-items: center;
+}
+
+/*MOBILE-NAV*/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/**************************/
+/*HERO-SECTION*/
+/**************************/
+
+.section-hero {
+  background-color: #f8f6ff;
+  padding: 2.4rem 0 9.6rem 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f6ff;
+  height: 9.6rem;
+  padding: 0 3.2rem;
+  position: relative;
+}
+
+.hero {
+  max-width: 125rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 9.6rem;
+  align-items: center;
+  column-gap: 3rem;
+  row-gap: 10rem;
+}
+
+.title {
+  font-size: 5.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.summary {
+  font-size: 2rem;
+  margin-bottom: 4.8rem;
+}
+
+.logo {
+  width: 18rem;
+}
+
+.links {
+  justify-self: end;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  display: inline-block;
+  color: #495057;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #9775fa;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 9px;
+}
+
+.big {
+  padding: 1.6rem 3.2rem;
+  font-size: 2.4rem;
+}
+
+.btn-link {
+  padding: 0.5rem 1rem;
+}
+
+.hero-img-box {
+  text-align: center;
+}
+
+.hero-img-box img {
+  width: 75%;
+}
+
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.6rem;
+  color: #ffeedb;
+}
+
+/**************************/
+/*FEATURES-SECTION*/
+/**************************/
+.section-features {
+  padding: 4.8rem 0 0 0;
+}
+
+.features {
+  padding: 0 4.8rem;
+}
+
+.feature-icon {
+  border-radius: 50%;
+  background-color: #f8f6ff;
+  color: #9775fa;
+  padding: 1.6rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.feature-description {
+  font-size: 1.8rem;
+}
+/*
+
+---01 TYPOGRAPHY---
+Font-size:16px
+10//12//14//18//20//24//30//36//42//52//62//74//90//106
+
+
+---02 Whitespace---
+8//16//24//32//40//48//56//64//72//80
+
+
+---03 COLOR---
+maincolor:#9775fa
+Greycolor:#e5dbff
+#38b6ff
+
+
+/**************************/
+/*Pricing-SECTION*/
+/**************************/
+.section-pricing {
+  padding: 9.6rem 0 0 0;
+}
+
+.section-title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.price-card {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  padding: 3.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1px solid #aaa;
+}
+
+.plan-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.plan-feature {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.plan-feature li {
+  font-size: 1.8rem;
+}
+
+.price {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.price-card a {
+  text-decoration: none;
+  color: #333;
+}
+
+.small {
+  padding: 0.8rem 1.6rem;
+  font-size: 2rem;
+}
+
+.best-plan {
+  background-color: #f8f6ff;
+  border: 2px solid #b197fc;
+}
+
+.normal-plan-btn:link,
+.normal-plan-btn:visited {
+  background-color: #ced4da;
+}
+
+/**************************/
+/*TESTIMONIAL-SECTION*/
+/**************************/
+.section-testimonial {
+  padding: 9.6rem 0 0 0;
+}
+
+.testimonial {
+  background-color: rgb(177, 151, 252, 0.12);
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 7rem;
+}
+
+.testimonial-text-box {
+  margin-top: 2.4rem;
+}
+
+.author-review {
+  margin-top: 0.8rem;
+  font-size: 1.8rem;
+  color: #777;
+}
+
+.author-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.less-gap {
+  row-gap: 4.8rem;
+  column-gap: 3.2rem;
+}
+
+/**************************/
+/*CTA-SECTION*/
+/**************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta-card {
+  grid-template-columns: 2fr 1fr;
+  background-color: #b197fc;
+  /* height: 50rem; */
+  border-radius: 11px;
+  overflow: hidden;
+  color: #3c2f64;
+  font-size: 1.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      rgb(179, 102, 30, 0.25),
+      rgb(255, 146, 43, 0.25)
+    ),
+    url(../image/laura-chouette-cbrnASza8ZQ-unsplash.jpg);
+  background-size: cover;
+}
+
+.out-box {
+  padding: 5.6rem 4rem;
+}
+.text-box {
+  /* width: 450px; */
+  border-radius: 11px;
+  margin: 0 auto;
+}
+
+.cta-form input {
+  font-size: inherit;
+  display: block;
+  margin: 0.8rem 0 1.6rem 0;
+  border-radius: 9px;
+  border: none;
+  padding: 1.2rem 0.8rem;
+}
+
+.cta-form label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn-form {
+  font-size: inherit;
+  display: block;
+  background-color: #3c2f64;
+  border: none;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.cta-form input::placeholder {
+  color: #ccc;
+}

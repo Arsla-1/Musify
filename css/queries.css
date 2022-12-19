@@ -1,0 +1,205 @@
+/* DESKTOP : 1274px */
+
+@media(max-width: 75em){
+  html{
+    font-size: 56.25%;
+  }
+  
+  .title {
+    font-size: 4.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .grid {
+    row-gap: 7.2rem;
+    column-gap: 5.6rem;
+  }
+
+  .section-title {
+    font-size: 4.2rem;
+  }
+
+  .out-box {
+    padding: 5.6rem 0 5.6rem 4.8rem;
+  }
+
+}
+
+/* TABLET : 917px */
+@media(max-width:57em){
+  html{
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 12rem;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 8rem;
+  }
+
+  .summary {
+    font-size: 1.8rem;
+  }
+
+  .hero-img-box img {
+    width: 55%;
+  }
+
+  .hero-text-box{
+    text-align: center;
+  }
+  .price-card {
+    padding: 2.8rem 2rem;
+  }
+
+  .cta-card {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  /* MOBILE-NAVIGATION */
+  .btn-mobile-nav{
+    display: block;
+  }
+
+  .links {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+
+    /* HIDE Navigation */
+    /* Display none does not allow aimation and therefore we will not use it. */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .links{
+    opacity:1;
+    pointer-events:auto;
+    visibility:visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .links a {
+    font-size: 2.4rem;
+  }
+
+}
+
+/* Small TABLET : 736px */
+@media(max-width:46em){
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5.6rem;
+  }
+ 
+ .best-plan{
+   grid-column: 1/-1;
+}
+  .grid-order{
+    order: 1;
+  }
+
+  .author-review {
+    font-size: 1.4rem;
+  }
+  .author-name {
+    font-size: 1.8rem;
+  }
+
+  .container{
+    max-width: 90rem;
+  }
+
+  .cta-card {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-cta{
+    padding: 4.8rem 0;
+  }
+
+  .cta-img-box{
+    height: 27rem;
+    grid-row: 2/1;
+  }
+
+  .out-box{
+    padding: 0 5.6rem 4.8rem 5.6rem;
+  }
+
+  .less-gap{
+    row-gap: 3.2rem;
+  }
+
+  
+}
+/* Mobile 544px */
+@media(max-width: 34em){
+  .grid-3-cols,.grid-2-cols{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  html{
+    font-size: 47%;
+  }
+
+  .hero-img-box img {
+    width: 65%;
+  }
+
+
+  .hero{
+    padding: 0 6rem;
+  }
+
+  .summary {
+    font-size: 1.9rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+  }
+  .price-card {
+  padding: 4rem 3.2rem;
+  }
+
+  .plan-feature li {
+    font-size: 1.9rem;
+  }
+}
+
+
+/*
+---01 TYPOGRAPHY---
+Font-size:16px
+10//12//14//18//20//24//30//36//42//52//62//74//90//106
+
+
+---02 Whitespace---
+8//16//24//32//40//48//56//64//72//80//88//96//104
